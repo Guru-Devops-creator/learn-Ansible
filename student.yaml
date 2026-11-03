@@ -1,0 +1,10 @@
+- First_name: guruprasad
+  lastname: Thanuku
+  dob: 01-01-01
+  addresses: 
+   - type: permanent
+     doorno: 5-53
+     streetName: gandhi nagar
+   - type: temporary 
+     doorno: 5-55
+     streetname: auto nagar 
