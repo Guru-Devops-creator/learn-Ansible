@@ -1,6 +1,6 @@
 - name: ping demo
-  hosts: local
-  connection: local
+  hosts: localhost # targeting ansible localhost 
+  connection: local # It will not accept crendentials 
   tasks:
   - name: ping localhost
     ping: 
