@@ -1,6 +1,7 @@
-- name: ping demo
+- name: demo on debug
   hosts: local
   connection: local
   tasks:
-  - name: ping localhost
-    ping: 
+  - name: print hello world
+    debug:
+     msg: "hello ansible...."
