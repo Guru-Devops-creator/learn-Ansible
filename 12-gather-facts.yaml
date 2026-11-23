@@ -5,3 +5,12 @@
    - name: print the facts 
      debug:
       msg: "{{ ansible_facts }}"
+   - name: print some information
+     debug:
+      msg: |
+        os_family= {{ ansible_facts['os_family']}
+        public_ip= {{ ansible_facts.default_ipv4.address }}
+        private_ip= {{ ansible_facts['default_ipv4']['address']}}
+        
+       
+     
