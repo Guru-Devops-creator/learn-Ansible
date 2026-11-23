@@ -13,6 +13,6 @@
        msg: "{{ user_output }}"
     
    - name: 
-      command: useradd roboshop 
-      when: user_output.rc !=0 
+     command: useradd roboshop 
+     when: user_output.rc !=0 
    
