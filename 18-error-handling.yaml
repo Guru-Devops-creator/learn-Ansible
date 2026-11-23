@@ -16,3 +16,19 @@
      command: useradd roboshop 
      when: user_output.rc !=0 
    
+   
+
+   - name: Task that might fail
+  command: /bin/false
+  register: command_result
+  ignore_errors: yes
+
+- name: Log command failure
+  debug:
+    msg: "The command failed with error: {{ command_result.stderr }}"
+  when: command_result.failed
+
+- name: Handle failure
+  fail:
+    msg: "The command '/bin/false' failed."
+  when: command_result.failed
