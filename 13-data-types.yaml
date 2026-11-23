@@ -14,9 +14,9 @@
     trainer: sivakumar
     months: 4
    exact_duration_in_months: 4.5 
-   tasks:
+  tasks:
     - name: print data types 
-   debug:
-    msg: |
-     name:  print data types
-     course: {{ course }}: {{ course | type_debug }}
+      debug:
+         msg: |
+         name:  print data types
+         course: {{ course }}: {{ course | type_debug }}
