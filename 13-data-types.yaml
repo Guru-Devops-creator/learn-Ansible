@@ -19,4 +19,4 @@
       debug:
          msg: |
          name:  print data types
-         course: {{ course }}: {{ course | type_debug }}
+         course: "{{ course }}: {{ course | type_debug }}"
