@@ -6,3 +6,9 @@
    - name: create user
      user:
        name: roboshop 
+   
+   - name: Remove the user 'roboshop'
+     user:
+      name: johnd
+      state: absent
+      remove: yes
