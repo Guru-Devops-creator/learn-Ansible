@@ -4,7 +4,7 @@
   become: yes
   tasks: 
    - name: test the command module
-     command: cat /etc/passwd |grep -i ec2-user
+     shell: cat /etc/passwd |grep -i ec2-user
      register: user_ouput 
 
    - name: print the outputs
