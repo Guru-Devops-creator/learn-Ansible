@@ -9,7 +9,7 @@
 
    - name: print the outputs
      debug: 
-      msg : {{ user_ouput }}
+      msg : "{{ user_ouput }}"
 
    - name: get the files
      command: cat /etc/passwd > files.out 
@@ -17,4 +17,4 @@
 
    - name: print the files  
      debug: 
-       msg : {{files_output }}
+       msg : "{{files_output }}"
