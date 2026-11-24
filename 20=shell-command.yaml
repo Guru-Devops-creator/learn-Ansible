@@ -1,0 +1,20 @@
+- name: shell vs command
+  hosts: local
+  connection: local
+  become: yes
+  tasks: 
+   - name: test the command module
+     command: cat /etc/passwd |grep -i ec2-user
+     register: user_ouput 
+
+   - name: print the outputs
+     debug: 
+      msg : {{ user_ouput }}
+
+   - name: get the files
+     command: cat /etc/passwd > files.out 
+     register: files_output 
+
+   - name: print the files  
+     debug: 
+       msg : {{files_output }}
