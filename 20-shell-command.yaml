@@ -12,7 +12,7 @@
       msg : "{{ user_ouput }}"
 
    - name: get the files
-     command: cat /etc/passwd > files.out 
+     command: ls -la  > /tmp/files.out  
      register: files_output 
 
    - name: print the files  
