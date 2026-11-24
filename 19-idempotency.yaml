@@ -9,6 +9,6 @@
    
    - name: Remove the user 'roboshop'
      user:
-      name: johnd
+      name: roboshop
       state: absent
       remove: yes
