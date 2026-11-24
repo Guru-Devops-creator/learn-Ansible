@@ -3,9 +3,9 @@
   become: yes
   connection: local
   tasks:
-   - name: create user
-     user:
-       name: roboshop 
+  #  - name: create user
+  #    user:
+  #      name: roboshop 
    
    - name: Remove the user 'roboshop'
      user:
